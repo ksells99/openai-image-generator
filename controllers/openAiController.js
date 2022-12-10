@@ -22,7 +22,7 @@ const generateImage = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      data: imageUrl,
+      newImageUrl: imageUrl,
     });
   } catch (error) {
     if (error.response) {
